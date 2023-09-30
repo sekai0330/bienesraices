@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Redes from "../components/Redes";
+import Footer from "../components/Footer";
 
 export default function Layout({children, pagina}) {
 
@@ -24,6 +25,8 @@ export default function Layout({children, pagina}) {
             <main>
                 {children}
             </main>
+
+            <Footer/>
         </>
     )
 }
