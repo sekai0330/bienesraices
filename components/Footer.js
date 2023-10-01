@@ -10,7 +10,7 @@ export default function Footer() {
                 <div className="flex flex-col md:items-start items-center">
                     <Link legacyBehavior href="/">
                         <a>
-                            <Image src="/img/logo.svg" width={200} height={70} alt="Logo Bienes Raices" />
+                            <Image src="/img/logo.svg" width={200} height={70} alt="Logo Bienes Raices" priority={true} />
                         </a>
                     </Link>
                     <p className="text-white [text-wrap:balance] text-sm pb-4 text-center md:text-start">Un equipo de expertos te guiará en todo el proceso, déjanos todo en nuestras manos</p>

@@ -2,14 +2,15 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Redes from "../components/Redes";
 import Footer from "../components/Footer";
+import ButtonWs from "../components/ButtonWs";
 
-export default function Layout({children, pagina}) {
+export default function Layout({children, title = '', description = '' }) {
 
     return (
         <>
             <Head>
-                <title>Bienes Raices - {pagina}</title>
-                <meta name="descripcion" content="Bienes Raices" />
+                <title>Bienes Raices - {title}</title>
+                <meta name="description" content={description} />
             </Head>
 
             <div className="bg-blue-800 ">
@@ -25,7 +26,7 @@ export default function Layout({children, pagina}) {
             <main>
                 {children}
             </main>
-
+            <ButtonWs/>
             <Footer/>
         </>
     )

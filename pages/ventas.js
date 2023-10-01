@@ -2,7 +2,10 @@ import Layout from "../layout/Layout"
 
 export default function Ventas() {
     return (
-        <Layout>
+        <Layout
+            title={'Ventas'}
+            description={'Compra de Casas, Terrenos, Locales y mas'}
+        >
             <h1 className="text-6xl font-extrabold uppercase text-center">
                 Ventas
             </h1>

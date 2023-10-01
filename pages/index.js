@@ -1,11 +1,39 @@
 import Layout from "../layout/Layout"
+import Link from "next/link"
+import Destacadas from "../components/Destacadas"
 
 export default function Home() {
   return (
-    <Layout>
-      <h1 className="text-6xl font-extrabold uppercase text-center my-40">
-        Bienes Raices
-      </h1>
+    <Layout 
+      title={'Inicio'}
+      description={'Venta y Alquiler de Casas, Terrenos, Locales y mas'}
+    >
+      <div className="[background-image:linear-gradient(to_right,rgb(0_0_0/.8),rgb(0_0_0/.2)),url(/img/landing.jpg)] h-screen grid items-center md:bg-cover bg-center md:p-0 mb-20">
+          <div className="max-w-screen-xl mx-auto md:w-5/6 lg:w-5/6 p-3">
+            <div className="md:w-3/5 [text-wrap:balance] space-y-10">
+              <h1 className="text-white text-6xl font-extrabold ">Tenemos tu Nueva Propiedad</h1>
+              <p className="text-white text-xl">Un equipo de expertos te guiará en todo el proceso, déjanos todo en nuestras manos.</p>
+              <div className="flex gap-5 mt-10">
+                  <Link legacyBehavior href='/ventas'>
+                      <a 
+                        className="bg-blue-600 hover:bg-blue-700 text-white mt-5 md:mt-0 py-3 px-10 uppercase font-bold rounded-md"
+                      >
+                          Ventas
+                      </a>
+                  </Link>
+                  <Link legacyBehavior href='/rentas'>
+                      <a 
+                        className="bg-gray-200 hover:bg-gray-300 mt-5 md:mt-0 py-3 px-10 uppercase font-bold rounded-md"
+                      >
+                          rentas
+                      </a>
+                  </Link>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <Destacadas />
     </Layout>
     
   )

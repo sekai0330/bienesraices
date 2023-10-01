@@ -19,6 +19,8 @@ module.exports = {
     //   naranja700: "#c2410c",
     // }
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }
 
