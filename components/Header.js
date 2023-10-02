@@ -23,7 +23,7 @@ export default function Header() {
                     <button
                     onClick={toggleMenu}
                     type="button"
-                    className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden"
+                    className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg lg:hidden"
                     aria-controls="navbar-default"
                     aria-expanded={isMenuOpen}
                     >
@@ -35,12 +35,12 @@ export default function Header() {
                     )}
                     </button>
                     <div
-                    className={`absolute top-full left-0 px-1 pb-1 w-full md:w-auto ${
+                    className={`absolute top-full left-0 px-1 pb-1 w-full lg:w-auto ${
                         isMenuOpen ? 'block' : 'hidden'
-                    } transition-all duration-500 ease-in-out bg-blue-700 md:flex md:items-center md:space-x-8  md:relative md:bg-transparent`}
+                    } transition-all duration-500 ease-in-out bg-blue-700 lg:flex lg:items-center lg:space-x-8  lg:relative lg:bg-transparent`}
                     id="navbar-default"
                     >
-                        <ul className="flex flex-col gap-3 md:gap-0 my-4 md:flex-row md:space-x-2 md:border-0">
+                        <ul className="flex flex-col gap-3 lg:gap-0 my-4 lg:flex-row lg:space-x-0 lg:space-x-2 lg:border-0">
                             <li>
                                 <Link legacyBehavior href="/">
                                     <a
