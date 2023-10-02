@@ -13,7 +13,7 @@ export default function Header() {
     };
 
     return(
-        <nav className="bg-blue-700 relative">
+        <nav className="bg-blue-700 relative ">
                 <div className="max-w-screen-xl flex items-center justify-between mx-auto lg:w-5/6 p-3 md:pl-0">
                     <Link legacyBehavior href="/">
                         <a className="flex items-center">
@@ -35,12 +35,12 @@ export default function Header() {
                     )}
                     </button>
                     <div
-                    className={`absolute top-full left-0 px-1 pb-1 w-full lg:w-auto ${
+                    className={`absolute top-full left-0 px-1 pb-1 w-full z-50 lg:w-auto ${
                         isMenuOpen ? 'block' : 'hidden'
                     } transition-all duration-500 ease-in-out bg-blue-700 lg:flex lg:items-center lg:space-x-8  lg:relative lg:bg-transparent`}
                     id="navbar-default"
                     >
-                        <ul className="flex flex-col gap-3 lg:gap-0 my-4 lg:flex-row lg:space-x-0 lg:space-x-2 lg:border-0">
+                        <ul className="flex flex-col gap-3 lg:gap-0 my-4 lg:flex-row lg:space-x-2 lg:border-0">
                             <li>
                                 <Link legacyBehavior href="/">
                                     <a
