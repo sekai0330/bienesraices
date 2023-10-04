@@ -1,0 +1,160 @@
+{
+    "rentas":[
+        {
+            "id": 1,
+            "nombre": "Casa en el lago",
+            "ubicacion": "Colinas de Agua Caliente, Tijuana",
+            "precio": 130000,
+            "imagen": "venta9",
+            "tipo": "Casa",
+            "habitaciones": 6,
+            "bathroom": 3,
+            "perimetro": "140",
+            "garage": 2,
+            "caracteristicas": [
+                "Facilidad para estacionarse",
+                "Seguridad 24 horas",
+                "Cocina integral",
+                "Salón de usos múltiples",
+                "Cancha de Tenis"
+            ],
+            "descripcion": [
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva.",
+
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva.",
+
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva."
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Casa en el lago",
+            "ubicacion": "Colinas de Agua Caliente, Tijuana",
+            "precio": 130000,
+            "imagen": "venta8",
+            "tipo": "Terreno",
+            "habitaciones": 6,
+            "bathroom": 3,
+            "perimetro": "140",
+            "garage": 2,
+            "caracteristicas": [
+                "Facilidad para estacionarse",
+                "Seguridad 24 horas",
+                "Cocina integral",
+                "Salón de usos múltiples",
+                "Cancha de Tenis"
+            ],
+            "descripcion": [
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva.",
+
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva.",
+
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva."
+            ]
+        },
+        {
+            "id": 3,
+            "nombre": "Casa en el lago",
+            "ubicacion": "Colinas de Agua Caliente, Tijuana",
+            "precio": 130000,
+            "imagen": "venta7",
+            "tipo": "Departamento",
+            "habitaciones": 6,
+            "bathroom": 3,
+            "perimetro": "140",
+            "garage": 2,
+            "caracteristicas": [
+                "Facilidad para estacionarse",
+                "Seguridad 24 horas",
+                "Cocina integral",
+                "Salón de usos múltiples",
+                "Cancha de Tenis"
+            ],
+            "descripcion": [
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva.",
+
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva.",
+
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva."
+            ]
+        },
+        {
+            "id": 4,
+            "nombre": "Casa en el lago",
+            "ubicacion": "Colinas de Agua Caliente, Tijuana",
+            "precio": 130000,
+            "imagen": "venta6",
+            "tipo": "Local",
+            "habitaciones": 6,
+            "bathroom": 3,
+            "perimetro": "140",
+            "garage": 2,
+            "caracteristicas": [
+                "Facilidad para estacionarse",
+                "Seguridad 24 horas",
+                "Cocina integral",
+                "Salón de usos múltiples",
+                "Cancha de Tenis"
+            ],
+            "descripcion": [
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva.",
+
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva.",
+
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva."
+            ]
+        },
+        {
+            "id": 5,
+            "nombre": "Casa en el lago",
+            "ubicacion": "Colinas de Agua Caliente, Tijuana",
+            "precio": 130000,
+            "imagen": "venta5",
+            "tipo": "Casa",
+            "habitaciones": 6,
+            "bathroom": 3,
+            "perimetro": "140",
+            "garage": 2,
+            "caracteristicas": [
+                "Facilidad para estacionarse",
+                "Seguridad 24 horas",
+                "Cocina integral",
+                "Salón de usos múltiples",
+                "Cancha de Tenis"
+            ],
+            "descripcion": [
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva.",
+
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva.",
+
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva."
+            ]
+        },
+        {
+            "id": 6,
+            "nombre": "Casa en el lago",
+            "ubicacion": "Colinas de Agua Caliente, Tijuana",
+            "precio": 130000,
+            "imagen": "venta4",
+            "tipo": "Casa",
+            "habitaciones": 6,
+            "bathroom": 3,
+            "perimetro": "140",
+            "garage": 2,
+            "caracteristicas": [
+                "Facilidad para estacionarse",
+                "Seguridad 24 horas",
+                "Cocina integral",
+                "Salón de usos múltiples",
+                "Cancha de Tenis"
+            ],
+            "descripcion": [
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva.",
+
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva.",
+
+                "Condominio de lujo en la Zona Dorada de Tijuana, con una espléndida vista, ubicado en Colinas de Agua Caliente, zona muy exclusiva."
+            ]
+        }
+    ]
+}

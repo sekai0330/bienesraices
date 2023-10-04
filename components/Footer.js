@@ -5,7 +5,7 @@ import Redes from "./Redes"
 export default function Footer() {
 
     return (
-        <div className="bg-slate-900 rounded-t-3xl">
+        <div className="bg-slate-900 pt-5">
             <div className="max-w-screen-xl grid md:grid-cols-3 md:justify-items-end mx-auto md:w-5/6 lg:w-5/6 px-3 md:px-0 pb-5">
                 <div className="flex flex-col md:items-start items-center">
                     <Link legacyBehavior href="/">
