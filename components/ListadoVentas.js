@@ -5,7 +5,7 @@ export default function ListadoVentas({ ventas }) {
 
     return (
         <section className="max-w-screen-xl mx-auto md:w-5/6 ">
-            <h2 className="uppercase text-3xl font-medium text-center  md:text-left">Propiedades Destacadas</h2>
+            <h2 className="uppercase text-3xl font-medium text-center  md:text-left">Propiedades En Venta</h2>
 
             <div className="grid place-content-center md:grid-cols-2 lg:grid-cols-3 gap-5 mb-20 md:mx-0 mx-3 mt-10">
                 {ventas.map(venta => (
@@ -34,7 +34,7 @@ export default function ListadoVentas({ ventas }) {
                             </li>
                             <li className="flex items-center gap-2">
                                 <IconCar/>
-                                <p>{venta.garages}</p>
+                                <p>{venta.garage}</p>
                             </li>
                             <li className="flex items-center gap-2">
                                 <IconBed/>
