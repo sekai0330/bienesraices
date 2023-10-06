@@ -5,13 +5,13 @@ export default function Filters() {
 
     const { filters, setFilters } = useFilters();
 
-    const minPrecioFilterId = useId()
+    const ubicacionFilterId = useId()
     const tipoFiltrerId = useId()
 
-    const handleChangeMinPrecio = (event) => {
+    const handleChangeUbicacion = (event) => {
         setFilters(prevState => ({
             ...prevState,
-            minPrecio: event.target.value
+            ubicacion: event.target.value
         }))
     }
 
@@ -24,7 +24,7 @@ export default function Filters() {
 
     return (
         <section className="flex flex-col lg:flex-row gap-4 mt-6 items-center lg:justify-between">
-            <div className="flex gap-2 border border-gray-200 bg-white p-2 rounded-lg shadow-lg">
+            {/* <div className="flex gap-2 border border-gray-200 bg-white p-2 rounded-lg shadow-lg">
                 <label htmlFor={minPrecioFilterId} className="text-black font-medium">Precio a partir de:</label>
                 <input
                     type="range"
@@ -35,11 +35,21 @@ export default function Filters() {
                     value={filters.minPrecio}
                 />
                 <span className="text-black font-medium">{filters.minPrecio}</span>
+            </div> */}
+            <div className="flex gap-2 border border-gray-200 bg-white p-2 rounded-lg shadow-lg">
+                <label htmlFor={ubicacionFilterId} className="text-black font-medium">Ubicacion:</label>
+                <select id={ubicacionFilterId} className="rounded px-1 text-center" onChange={handleChangeUbicacion}>
+                    <option value="all">Todas</option>
+                    <option value="Michoacan">Michoacan</option>
+                    <option value="Guerrero">Guerrero</option>
+                    <option value="Chiapas">Chiapas</option>
+                    <option value="Yucatan">Yucatan</option>
+                </select>
             </div>
             <div className="flex gap-2 border border-gray-200 bg-white p-2 rounded-lg shadow-lg">
                 <label htmlFor={tipoFiltrerId} className="text-black font-medium">Tipo de Propiedad:</label>
                 <select id={tipoFiltrerId} className="rounded px-1 text-center" onChange={handleChangeTipo}>
-                    <option value="all">Todos</option>
+                    <option value="all">Todas</option>
                     <option value="Casa">Casa</option>
                     <option value="Terreno">Terreno</option>
                     <option value="Departamento">Departamento</option>

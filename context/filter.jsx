@@ -10,16 +10,18 @@ const FilterProvider = ({ children }) => {
     const [rentas, setRentas ] = useState(rentasData);
     const [ filters, setFilters ] = useState({
         tipo: "all",
-        minPrecio: 0
+        ubicacion: "all"
     });
 
     const filterVentas = (ventas) => {
         return ventas.ventas.filter( ventas => {
             return (
-                ventas.precio >= filters.minPrecio &&
                 (
                 filters.tipo === 'all' ||
                 ventas.tipo === filters.tipo
+                ) &&
+                (
+                    filters.ubicacion === 'all' || ventas.ubicacion === filters.ubicacion
                 )
             )
         })
@@ -31,10 +33,12 @@ const FilterProvider = ({ children }) => {
     const filterRentas = (rentas) => {
         return rentas.rentas.filter( rentas => {
             return (
-                rentas.precio >= filters.minPrecio &&
                 (
                 filters.tipo === 'all' ||
                 rentas.tipo === filters.tipo
+                ) &&
+                (
+                    filters.ubicacion === 'all' || rentas.ubicacion === filters.ubicacion
                 )
             )
         })

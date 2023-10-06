@@ -51,7 +51,7 @@ export default function Footer() {
                                 <a
                                     className="border-b-2 border-transparent text-white text-sm hover:border-white transition-all duration-300"
                                 >
-                                    ¿Quienes Somos?
+                                    Nosotros
                                 </a>
                             </Link>
                         </li>
@@ -69,7 +69,7 @@ export default function Footer() {
                                 <a
                                     className="border-b-2 border-transparent text-white text-sm hover:border-white transition-all duration-300"
                                 >
-                                    Contactanos
+                                    contacto
                                 </a>
                             </Link>
                         </li>

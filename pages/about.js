@@ -1,5 +1,6 @@
 import Layout from "../layout/Layout"
 import { aboutData } from "../data/aboutData"
+import Link from "next/link"
 
 export default function About() {
     return (
@@ -21,12 +22,21 @@ export default function About() {
                         <div className="lg:w-3/5 space-y-6 text-lg">
                             <p className="">En [Nombre de tu empresa], somos apasionados por hacer que tus sueños de bienes raíces se hagan realidad. Nuestra misión es proporcionarte seguridad, precio y tiempo en cada paso de tu viaje inmobiliario. Con años de experiencia en el mercado, nuestro equipo se esfuerza por ofrecer propiedades de calidad a precios justos. </p>
                             <p className="">Nos comprometemos a agilizar el proceso para que encuentres la propiedad perfecta sin perder tiempo. En [Nombre de tu empresa], tu satisfacción es nuestra prioridad, y estamos aquí para ayudarte a tomar decisiones informadas y exitosas en el emocionante mundo de los bienes raíces. ¡Bienvenido a tu nuevo hogar!</p>
+                            <div>
+                                <Link legacyBehavior href='/contacto'>
+                                    <a 
+                                        className="bg-blue-600 hover:bg-blue-700 text-white mt-5 md:mt-0 py-3 px-10 uppercase font-bold rounded-md"
+                                    >
+                                        Contactanos
+                                    </a>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </section>
 
                 <section>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-20">
                         {aboutData.map( about => (
                             <div key={about.id} className="flex flex-col items-center text-center space-y-3">
                                 <img 

@@ -1,7 +1,7 @@
 export const destacadasData = [
     {
         id: 1,
-        imagen: "venta1",
+        imagen: "venta4",
         tipo: "casa",
         precio: "120000",
         nombre: "Casa En el Lago",

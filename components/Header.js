@@ -81,7 +81,7 @@ export default function Header() {
                                         router.pathname === '/about' && 'border-white'
                                         }`}
                                     >
-                                        ¿Quienes Somos?
+                                        Nosotros
                                     </a>
                                 </Link>
                             </li>
@@ -103,18 +103,7 @@ export default function Header() {
                                         router.pathname === '/contacto' && 'border-white'
                                         }`}
                                     >
-                                        Contactanos
-                                    </a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link legacyBehavior href="/privacidad">
-                                    <a
-                                        className={`mt-4 py-1 md:py-2.5 px-3 ml-5 md:mt-0 md:px-0 border-b-4 border-transparent text-white hover:border-white transition-all duration-300 ${
-                                        router.pathname === '/privacidad' && 'border-white'
-                                        }`}
-                                    >
-                                        Aviso de Privacidad
+                                        Contacto
                                     </a>
                                 </Link>
                             </li>
