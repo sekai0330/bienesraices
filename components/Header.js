@@ -17,7 +17,7 @@ export default function Header() {
                 <div className="max-w-screen-xl flex items-center justify-between mx-auto lg:w-5/6 p-3 md:pl-0">
                     <Link legacyBehavior href="/">
                         <a className="flex items-center">
-                            <Image src="/img/logo.svg" width={200} height={70} alt="Logo Bienes Raices" />
+                            <Image src="/img/logo.svg" width={200} height={70} priority alt="Logo Bienes Raices" />
                         </a>
                     </Link>
                     <button

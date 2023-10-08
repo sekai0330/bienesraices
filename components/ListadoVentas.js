@@ -10,7 +10,7 @@ export default function ListadoVentas({ ventas }) {
             <div className="grid place-content-center md:grid-cols-2 lg:grid-cols-3 gap-5 mb-20 md:mx-0 mx-3 mt-10">
                 {ventas.map(venta => (
                     <div key={venta.id} className="rounded-lg shadow-lg shadow-slate-400 p-3 space-y-2">
-                        <Link legacyBehavior href={`/${venta.url}`}>
+                        <Link legacyBehavior href={`/ventas/${venta.url}`}>
                             <a>
                                 <img 
                                     src={`/img/${venta.imagen}.jpg`}  

@@ -6,11 +6,16 @@ export default function Contacto() {
         <Layout
             title={'Contacto'}
         >
-            <div className="md:w-5/6 lg:w-5/6 mx-auto max-w-screen-xl py-20 px-3 lg:px-0">
-                <h2 className="uppercase text-3xl font-medium text-center md:text-left">Contactanos | Bienes Raices</h2>
+            <section className="[background-image:linear-gradient(to_right,rgb(0_0_0/.8),rgb(0_0_0/.2)),url(/img/bgform.webp)] min-h-screen bg-cover bg-center">
+                <div className="md:w-5/6 lg:w-5/6 mx-auto max-w-screen-xl px-3 lg:px-0 py-10">
+                    <h2 className="uppercase text-3xl text-white font-medium text-center md:text-left mb-5">Contactanos | Bienes Raices</h2>
 
-                <Formulario />
-            </div>
+                    <div className=" lg:w-3/5">
+                        <Formulario />
+                    </div>
+
+                </div>
+            </section>
         </Layout>
     )
 }

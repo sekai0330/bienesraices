@@ -1,8 +1,8 @@
 {
-    "ventas":[
+    "destacadas":[
         {
             "id": 1,
-            "nombre": "Casa en el lago",
+            "nombre": "Departamento con Alberca",
             "url": "casa1",
             "ubicacion": "Michoacan",
             "direccion": "Colinas de Agua Caliente",
@@ -60,7 +60,7 @@
         },
         {
             "id": 3,
-            "nombre": "Casa en Mexico",
+            "nombre": "Departamento con Alberca",
             "url": "casa3",
             "ubicacion": "Guerrero",
             "direccion": "Colinas de Agua Caliente",
@@ -89,7 +89,7 @@
         },
         {
             "id": 4,
-            "nombre": "Casa en el lago",
+            "nombre": "Departamento con Alberca",
             "url": "casa4",
             "ubicacion": "Chiapas",
             "direccion": "Colinas de Agua Caliente",

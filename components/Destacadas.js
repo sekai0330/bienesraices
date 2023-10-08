@@ -1,16 +1,19 @@
 import Link from "next/link"
-import { destacadasData } from "../data/destacadasData"
 import { IconBed, IconCar, IconToilet } from "./Icons"
+import useFilters from "../hooks/useFilter"
 
 export default function Destacadas() {
+
+    const { destacadas } = useFilters()
+
     return (
         <section className="max-w-screen-xl mx-auto md:w-5/6 ">
             <h2 className="uppercase text-3xl font-medium text-center  md:text-left">Propiedades Destacadas</h2>
 
             <div className="grid place-content-center md:grid-cols-2 lg:grid-cols-3 gap-5 mb-20 md:mx-0 mx-3 mt-10">
-                {destacadasData.map(destacada => (
+                {destacadas.destacadas.map(destacada => (
                     <div key={destacada.id} className="rounded-lg shadow-lg shadow-slate-400 p-3 space-y-2">
-                        <Link legacyBehavior href={`/${destacada.url}`}>
+                        <Link legacyBehavior href={`/destacadas/${destacada.url}`}>
                             <a>
                                 <img 
                                     src={`/img/${destacada.imagen}.jpg`}  

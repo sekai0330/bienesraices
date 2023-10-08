@@ -24,18 +24,6 @@ export default function Filters() {
 
     return (
         <section className="flex flex-col lg:flex-row gap-4 mt-6 items-center lg:justify-between">
-            {/* <div className="flex gap-2 border border-gray-200 bg-white p-2 rounded-lg shadow-lg">
-                <label htmlFor={minPrecioFilterId} className="text-black font-medium">Precio a partir de:</label>
-                <input
-                    type="range"
-                    id={minPrecioFilterId}
-                    min="0"
-                    max="500000"
-                    onChange={handleChangeMinPrecio}
-                    value={filters.minPrecio}
-                />
-                <span className="text-black font-medium">{filters.minPrecio}</span>
-            </div> */}
             <div className="flex gap-2 border border-gray-200 bg-white p-2 rounded-lg shadow-lg">
                 <label htmlFor={ubicacionFilterId} className="text-black font-medium">Ubicacion:</label>
                 <select id={ubicacionFilterId} className="rounded px-1 text-center" onChange={handleChangeUbicacion}>

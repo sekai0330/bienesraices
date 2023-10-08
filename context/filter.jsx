@@ -1,6 +1,7 @@
 import { createContext, useState } from "react";
 import ventasData from "../mocks/ventas.json";
 import rentasData from "../mocks/rentas.json";
+import destacadasData from "../mocks/destacadas.json";
 
 const FiltersContext = createContext();
 
@@ -8,6 +9,7 @@ const FilterProvider = ({ children }) => {
 
     const [ventas, setVentas ] = useState(ventasData);
     const [rentas, setRentas ] = useState(rentasData);
+    const [destacadas, SetDestacadas ] = useState(destacadasData);
     const [ filters, setFilters ] = useState({
         tipo: "all",
         ubicacion: "all"
@@ -54,6 +56,8 @@ const FilterProvider = ({ children }) => {
                 setVentas,
                 rentas,
                 setRentas,
+                destacadas,
+                SetDestacadas,
                 filters,
                 setFilters,
                 filteredVentas,
