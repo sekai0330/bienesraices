@@ -21,7 +21,7 @@ export default function Venta() {
             description={`${sale.direccion}`}
         >
             <div className="max-w-screen-xl mx-auto md:w-5/6 lg:w-5/6 px-3 md:px-0 my-10">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col gap-4 md:flex-row items-center justify-between">
                     <div>
                         <h2 className="uppercase text-3xl font-medium text-center md:text-left">{`${sale.tipo} en venta: ${sale.nombre}`}</h2>
                         <p className="text-xl">{`${sale.direccion}, ${sale.ubicacion}`}</p>
@@ -35,7 +35,7 @@ export default function Venta() {
                         alt={`imagen de ${sale.nombre}`}
                         className="block w-full object-cover object-center rounded-3xl"
                     />
-                    <ul className="grid grid-cols-4 place-items-center text-center mt-5 p-2 border border-slate-500 rounded-3xl bg-orange-100">
+                    <ul className="grid grid-cols-2 gap-4 md:grid-cols-4 place-items-center text-center mt-5 p-2 border border-slate-500 rounded-3xl bg-orange-100">
                         <li>
                             <p className="text-2xl font-bold">{`${sale.habitaciones}`}</p>
                             <p className="uppercase text-sm">Habitaciones</p>
@@ -55,35 +55,34 @@ export default function Venta() {
                     </ul>
                 </div>
 
-                <div className="flex gap-5 mt-10">
-                    <div className="w-2/3 flex flex-col space-y-6 [text-wrap:balance]">
-                        <div className="flex border-b-4 border-orange-100 pb-4 ">
-                            <div className="w-1/4 mb-4">
+                <div className="flex flex-col lg:flex-row gap-5 mt-10">
+                    <div className="lg:w-2/3 flex flex-col space-y-6 [text-wrap:balance]">
+                        <div className="flex flex-col md:flex-row gap-5 border-b-4 border-orange-100 pb-4 ">
+                            <div className="md:w-2/6 lg:w-1/4 mb-4">
                                 <h3 className="text-xl font-medium">Descripcion:</h3>
                             </div>
-                            <div className="w-3/4 space-y-4">
+                            <div className="md:w-4/6 lg:w-3/4 space-y-4">
                                 {sale.descripcionLarga.map((descripcion, index) => (
                                     <p key={index} >{descripcion}</p>
                                 ))}
                             </div>
                         </div>
-                        <div className="flex">
-                            <div className="w-1/4 mb-4">
+                        <div className="flex flex-col md:flex-row">
+                            <div className="md:w-2/6 lg:w-1/4 mb-4">
                                 <h3 className="text-xl font-medium">Caracteristicas:</h3>
                             </div>
-                            <div className="w-3/4 space-y-2">
+                            <div className="md:w-4/6 lg:w-3/4 space-y-2">
                                 {sale.caracteristicas.map((caracteristica, index) => (
                                     <li key={index} >{caracteristica}</li>
                                 ))}
                             </div>
                         </div>
                     </div>
-                    <div className="w-1/3">
+                    <div className="lg:w-1/3 mt-8 lg:mt-0">
                         <Formulario />
                     </div>
                 </div>
             </div>
-
         </Layout>
     )
 }
