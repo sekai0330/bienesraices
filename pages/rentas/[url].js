@@ -27,7 +27,7 @@ export default function Venta() {
                         <h2 className="uppercase text-3xl font-medium text-center md:text-left">{`${sale.tipo} en venta: ${sale.nombre}`}</h2>
                         <p className="text-xl">{`${sale.direccion}, ${sale.ubicacion}`}</p>
                     </div>
-                    <p className="text-5xl font-bold text-orange-500">{`$${sale.precio}`}</p>
+                    <p className="text-5xl font-bold text-precio">{`$${sale.precio}`}</p>
                 </div>
 
                 <div className="mt-5">
@@ -36,7 +36,7 @@ export default function Venta() {
 
                 <div className="mt-5">
                     
-                    <ul className="grid grid-cols-2 gap-4 md:grid-cols-4 place-items-center text-center mt-5 p-2 border border-slate-500 rounded-3xl bg-orange-100">
+                    <ul className="grid grid-cols-2 gap-4 md:grid-cols-4 place-items-center text-center mt-5 p-2 border border-textgris rounded-3xl bg-fondodetalles">
                         <li>
                             <p className="text-2xl font-bold">{`${sale.habitaciones}`}</p>
                             <p className="uppercase text-sm">Habitaciones</p>
@@ -58,7 +58,7 @@ export default function Venta() {
 
                 <div className="flex flex-col lg:flex-row gap-5 mt-10">
                     <div className="lg:w-2/3 flex flex-col space-y-6 [text-wrap:balance]">
-                        <div className="flex flex-col md:flex-row gap-5 border-b-4 border-orange-100 pb-4 ">
+                        <div className="flex flex-col md:flex-row gap-5 border-b-4 border-navegacion pb-4 ">
                             <div className="md:w-2/6 lg:w-1/4 mb-4">
                                 <h3 className="text-xl font-medium">Descripcion:</h3>
                             </div>
@@ -83,7 +83,7 @@ export default function Venta() {
                         <div className="flex items-center justify-center">
                             <Link legacyBehavior href='/contacto'>
                                 <a 
-                                    className="bg-blue-600 hover:bg-blue-700 text-white mt-5 md:mt-0 py-3 px-10 uppercase font-bold rounded-md"
+                                    className="bg-botones hover:bg-botoneshover transition-colors text-white mt-5 md:mt-0 py-3 px-10 uppercase font-bold rounded-md"
                                 >
                                     Contactanos
                                 </a>
