@@ -30,6 +30,20 @@ export default function ListadoRentas({ rentas }) {
         window.scrollTo({ top: 300, behavior: "smooth" }); // Scroll suave a la parte superior
     };
 
+    const goToNextPage = () => {
+        if (paginaActual < paginas.length) {
+          setPaginaActual(paginaActual + 1);
+          scrollToTop();
+        }
+    };
+      
+      const goToPrevPage = () => {
+        if (paginaActual > 1) {
+          setPaginaActual(paginaActual - 1);
+          scrollToTop();
+        }
+    };
+
     return (
         <section className="max-w-screen-xl mx-auto md:w-5/6 ">
             <h2 className="uppercase text-3xl font-medium text-center  md:text-left">Propiedades En Renta</h2>
@@ -73,6 +87,14 @@ export default function ListadoRentas({ rentas }) {
             </div>
             {/* Agrega controles de paginación */}
             <div className="flex justify-center pb-10">
+                <button
+                    onClick={goToPrevPage}
+                    className={`${
+                    paginaActual === 1 ? "bg-gray-300 text-gray-500" : "bg-orange-500 text-white"
+                    } px-4 py-2 mx-2 rounded-md`}
+                >
+                    Anterior
+                </button>
                 {paginas.map((_, index) => (
                 <button
                     key={index}
@@ -89,6 +111,16 @@ export default function ListadoRentas({ rentas }) {
                     {index + 1}
                 </button>
                 ))}
+                <button
+                    onClick={goToNextPage}
+                    className={`${
+                    paginaActual === paginas.length
+                        ? "bg-gray-300 text-gray-500"
+                        : "bg-orange-500 text-white"
+                    } px-4 py-2 mx-2 rounded-md`}
+                >
+                    Siguiente
+                </button>
             </div>
         </section>
     )
