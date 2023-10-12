@@ -51,7 +51,7 @@ export default function ListadoVentas({ ventas }) {
 
             <div className="grid place-content-center md:grid-cols-2 lg:grid-cols-3 gap-5 mb-20 md:mx-0 mx-3 mt-10">
                 {propiedadesEnPagina.map(venta => (
-                    <div key={venta.id} className="rounded-lg shadow-lg shadow-slate-400 p-3 space-y-2">
+                    <div key={venta.id} className="rounded-lg shadow-lg shadow-textgris p-3 space-y-2">
                         <Link legacyBehavior href={`/ventas/${venta.url}`}>
                             <a>
                                 <img 
@@ -62,8 +62,8 @@ export default function ListadoVentas({ ventas }) {
                             </a>
                         </Link>
                         <div className="flex items-center justify-between">
-                            <h3 className="text-orange-600 font-bold">{venta.tipo}</h3>
-                            <p className="text-orange-600 font-extrabold">${venta.precio}</p>
+                            <h3 className="text-botoneshover font-bold">{venta.tipo}</h3>
+                            <p className="text-precio text-2xl font-extrabold">${venta.precio}</p>
                         </div>
                         <div>
                             <h3 className="text-lg text-center font-semibold">{venta.nombre}</h3>
@@ -93,7 +93,7 @@ export default function ListadoVentas({ ventas }) {
                 <button
                     onClick={goToPrevPage}
                     className={`${
-                    paginaActual === 1 ? "bg-gray-300 text-gray-500" : "bg-orange-500 text-white"
+                    paginaActual === 1 ? "bg-grisclaro text-textgris" : "bg-botones text-white"
                     } px-4 py-2 mx-2 rounded-md`}
                 >
                     Anterior
@@ -107,8 +107,8 @@ export default function ListadoVentas({ ventas }) {
                     }}
                     className={`${
                     index + 1 === paginaActual
-                        ? "bg-orange-500 text-white"
-                        : "bg-gray-300 text-black"
+                        ? "bg-botones text-white"
+                        : "bg-grisclaro text-black"
                     } px-4 py-2 mx-2 rounded-md`}
                 >
                     {index + 1}
@@ -118,8 +118,8 @@ export default function ListadoVentas({ ventas }) {
                     onClick={goToNextPage}
                     className={`${
                     paginaActual === paginas.length
-                        ? "bg-gray-300 text-gray-500"
-                        : "bg-orange-500 text-white"
+                        ? "bg-grisclaro text-textgris"
+                        : "bg-botones text-white"
                     } px-4 py-2 mx-2 rounded-md`}
                 >
                     Siguiente

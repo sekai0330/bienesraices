@@ -7,17 +7,24 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    // colors: {
-    //   gris: "#3053EA",
-    //   white: "#ffffff",
-    //   black: "#131313",
-    //   grisclaro: "#86868b",
-    //   grisclaro2: "#d1d5db",
-    //   grisclaro3: "#9ca3af",
-    //   grisoscuro: "#3053EA",
-    //   naranja: "#FF6D09",
-    //   naranja700: "#c2410c",
-    // }
+    colors: {
+      transparent: "transparent",
+      header1: "#323831",
+      header2: "#3F443E",
+      //footer: "#0f172a",
+      footer: "#131313",
+      botones: "#C5AA5A",
+      botoneshover: "#A58944",
+      botondisable: "#e5e7eb",
+      textgris: "#6b7280",
+      white: "#ffffff",
+      black: "#131313",
+      grisclaro: "#e5e7eb",
+      precio: "#C5AA5A",
+      navegacion: "#C5AA5A",
+      fondodetalles: "#FFF8E2",
+      wsboton: "#25D366"
+    }
   },
   plugins: [
     require('tailwindcss-animated')

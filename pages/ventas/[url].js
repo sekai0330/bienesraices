@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 import useFilters from "../../hooks/useFilter";
 import Layout from "../../layout/Layout";
-import Formulario from "../../components/Formulario";
+import Link from "next/link";
 import Carousel from "../../components/Carousel";
 
 export default function Venta() {
@@ -80,7 +80,15 @@ export default function Venta() {
                         </div>
                     </div>
                     <div className="lg:w-1/3 mt-8 lg:mt-0">
-                        <Formulario />
+                        <div className="flex items-center justify-center">
+                            <Link legacyBehavior href='/contacto'>
+                                <a 
+                                    className="bg-blue-600 hover:bg-blue-700 text-white mt-5 md:mt-0 py-3 px-10 uppercase font-bold rounded-md"
+                                >
+                                    Contactanos
+                                </a>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

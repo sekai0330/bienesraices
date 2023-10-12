@@ -35,7 +35,7 @@ export default function Carousel({ images }) {
                         key={index}
                         onClick={() => setCurrentImage(index)}
                         className={`w-4 h-4 mx-2 rounded-full cursor-pointer ${
-                        index === currentImage ? 'bg-orange-500' : 'bg-gray-400'
+                        index === currentImage ? 'bg-navegacion' : 'bg-textgris'
                         }`}
                     ></div>
                 ))}

@@ -27,7 +27,7 @@ export function IconCar (props){
     return (
         <svg
           viewBox="0 0 1024 1024"
-          fill="currentColor"
+          fill="#A58944"
           height="1.4rem"
           width="1.4rem"
           {...props}
@@ -41,7 +41,7 @@ export function IconBed(props) {
     return (
       <svg
         viewBox="0 0 640 512"
-        fill="currentColor"
+        fill="#A58944"
         height="1.4rem"
         width="1.4rem"
         {...props}
@@ -55,7 +55,7 @@ export function IconToilet(props) {
     return (
       <svg
         viewBox="0 0 448 512"
-        fill="currentColor"
+        fill="#A58944"
         height="1.4rem"
         width="1.4rem"
         {...props}

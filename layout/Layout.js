@@ -13,7 +13,7 @@ export default function Layout({children, title = '', description = '' }) {
                 <meta name="description" content={description} />
             </Head>
 
-            <div className="bg-blue-800 ">
+            <div className="bg-header1">
                 <div className="max-w-screen-xl flex flex-col md:flex-row items-center justify-between mx-auto lg:w-5/6 p-3.5 md:pl-0">
                     <h2 className="font-medium text-white pl-2">Telefono/Whatsapp: 123 456 789</h2>
                     <Redes />
