@@ -30,7 +30,7 @@ export default function Tuventa() {
                     <p>Confía en [Tu Nombre o el Nombre de tu Agencia] para hacer realidad tus objetivos inmobiliarios. ¡Estamos listos para trabajar contigo!</p>
                 </div>
 
-                <div className="mt-10">
+                <div className="mt-10 mx-auto w-2/4">
                     <Formulario />
                 </div>
             </div>

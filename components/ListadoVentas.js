@@ -2,7 +2,7 @@ import { IconBed, IconToilet, IconCar } from "./Icons";
 import Link from "next/link";
 
 export default function ListadoVentas({ ventas }) {
-
+    
     return (
         <section className="max-w-screen-xl mx-auto md:w-5/6 ">
             <h2 className="uppercase text-3xl font-medium text-center  md:text-left">Propiedades En Venta</h2>

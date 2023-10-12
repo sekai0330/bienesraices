@@ -2,13 +2,14 @@ import { useRouter } from "next/router"
 import useFilters from "../../hooks/useFilter";
 import Layout from "../../layout/Layout";
 import Formulario from "../../components/Formulario";
+import Carousel from "../../components/Carousel";
 
 export default function Venta() {
 
     const router = useRouter()
     const { url } = router.query;
     const { ventas } = useFilters()
-    
+
     const sale = ventas.ventas.find((venta) => venta.url === url);
 
     if (!sale) {
@@ -30,11 +31,11 @@ export default function Venta() {
                 </div>
 
                 <div className="mt-5">
-                    <img 
-                        src={`/img/${sale.imagen}.jpg`}
-                        alt={`imagen de ${sale.nombre}`}
-                        className="block w-full object-cover object-center rounded-3xl"
-                    />
+                    <Carousel images={sale.imagenes} />
+                </div>
+
+                <div className="mt-5">
+                    
                     <ul className="grid grid-cols-2 gap-4 md:grid-cols-4 place-items-center text-center mt-5 p-2 border border-slate-500 rounded-3xl bg-orange-100">
                         <li>
                             <p className="text-2xl font-bold">{`${sale.habitaciones}`}</p>

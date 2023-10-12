@@ -37,7 +37,7 @@ export default function Destacadas() {
                             </li>
                             <li className="flex items-center gap-2">
                                 <IconCar/>
-                                <p>{destacada.garages}</p>
+                                <p>{destacada.garage}</p>
                             </li>
                             <li className="flex items-center gap-2">
                                 <IconBed/>
