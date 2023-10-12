@@ -23,10 +23,10 @@ export default function Filters() {
     }
 
     return (
-        <section className="flex flex-col lg:flex-row gap-4 mt-6 items-center lg:justify-between">
-            <div className="flex gap-2 border border-gray-200 bg-white p-2 rounded-lg shadow-lg">
+        <section className="flex flex-col lg:flex-row gap-4 mt-6 items-center lg:justify-start">
+            <div className="flex items-center gap-2 border border-gray-200 bg-white p-2 rounded-lg shadow-lg">
                 <label htmlFor={ubicacionFilterId} className="text-black font-medium">Ubicacion:</label>
-                <select id={ubicacionFilterId} className="rounded px-1 text-center" onChange={handleChangeUbicacion}>
+                <select id={ubicacionFilterId} className="rounded px-1 border-orange-200 border p-1 text-center" onChange={handleChangeUbicacion}>
                     <option value="all">Todas</option>
                     <option value="Michoacan">Michoacan</option>
                     <option value="Guerrero">Guerrero</option>
@@ -34,9 +34,9 @@ export default function Filters() {
                     <option value="Yucatan">Yucatan</option>
                 </select>
             </div>
-            <div className="flex gap-2 border border-gray-200 bg-white p-2 rounded-lg shadow-lg">
+            <div className="flex items-center gap-2 border border-gray-200 bg-white p-2 rounded-lg shadow-lg">
                 <label htmlFor={tipoFiltrerId} className="text-black font-medium">Tipo de Propiedad:</label>
-                <select id={tipoFiltrerId} className="rounded px-1 text-center" onChange={handleChangeTipo}>
+                <select id={tipoFiltrerId} className="rounded px-1 border-orange-200 border p-1 text-center" onChange={handleChangeTipo}>
                     <option value="all">Todas</option>
                     <option value="Casa">Casa</option>
                     <option value="Terreno">Terreno</option>
