@@ -8,13 +8,14 @@ const FiltersContext = createContext();
 
 const FilterProvider = ({ children }) => {
 
-    const [ventas, setVentas ] = useState(ventasData);
-    const [rentas, setRentas ] = useState(rentasData);
-    const [destacadas, SetDestacadas ] = useState(destacadasData);
+    const [ ventas, setVentas ] = useState(ventasData);
+    const [ rentas, setRentas ] = useState(rentasData);
+    const [ destacadas, SetDestacadas ] = useState(destacadasData);
     const [ filters, setFilters ] = useState({
         tipo: "all",
         ubicacion: "all"
     });
+    
 
     const router = useRouter()
 

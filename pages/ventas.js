@@ -4,7 +4,6 @@ import ListadoVentas from "../components/ListadoVentas"
 import useFilters from "../hooks/useFilter"
 
 export default function Ventas() {
-
     const { filteredVentas } = useFilters();
 
     return (
