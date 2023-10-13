@@ -35,7 +35,7 @@ export default function Home() {
 
       <Destacadas />
 
-      <section className="grid grid-cols-1 lg:grid-cols-2 items-center bg-grisclaro mb-10">
+      <section className="grid grid-cols-1 lg:grid-cols-2 items-center bg-grisclaro mb-20">
         <div className="px-3 lg:w-3/5 mx-auto [text-wrap:balance]">
           <h3 className="text-4xl font-semibold mt-10">Tenemos la propiedad que necesitas.</h3>
           <p className="text-lg text-gray-700 font-medium mt-5 mb-10 lg:mb-0 lg:mt-10">Nosotros te brindamos un servicio personalizado y de calidad para ayudarte con tu búsqueda inmobiliaria. Si necesitas asistencia o tienes preguntas, siéntete libre de contactarnos.</p>

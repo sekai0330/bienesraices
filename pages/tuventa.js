@@ -1,5 +1,5 @@
 import Layout from "../layout/Layout"
-import Formulario from "../components/Formulario"
+import Link from "next/link"
 
 export default function Tuventa() {
     return (
@@ -30,8 +30,14 @@ export default function Tuventa() {
                     <p>Confía en [Tu Nombre o el Nombre de tu Agencia] para hacer realidad tus objetivos inmobiliarios. ¡Estamos listos para trabajar contigo!</p>
                 </div>
 
-                <div className="mt-10 mx-auto w-2/4">
-                    <Formulario />
+                <div className="flex items-center justify-center lg:justify-center mt-6">
+                    <Link legacyBehavior href='/contacto'>
+                        <a 
+                            className="bg-botones hover:bg-botoneshover transition-colors text-white mt-5 md:mt-0 py-3 px-10 uppercase font-bold rounded-md"
+                        >
+                            Contactanos
+                        </a>
+                    </Link>
                 </div>
             </div>
         </Layout>
