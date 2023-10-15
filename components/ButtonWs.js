@@ -10,11 +10,11 @@ export default function ButtonWs() {
           href="https://api.whatsapp.com/send?phone=TU_NUMERO_DE_TELEFONO"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-2 right-4 bg-wsboton text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition duration-300 hover:animate-jump"
+          className="fixed bottom-4 right-4 bg-wsboton text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition duration-300 hover:animate-jump"
         >
           <img className='w-6 h-6' src="/img/whatsapp.svg" alt="Botton de whatsapp"/>
         </a>
-        <a
+        {/* <a
         href="#"
         onClick={handleScrollToTop}
         className="fixed bottom-16 right-5 bg-grisclaro text-black p-2 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 hover:animate-jump"
@@ -25,7 +25,7 @@ export default function ButtonWs() {
             </svg>
 
         </i>
-      </a>
+      </a> */}
       </div>
       );
 }

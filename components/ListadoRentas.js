@@ -54,9 +54,9 @@ export default function ListadoRentas({ rentas }) {
                         <Link legacyBehavior href={`/rentas/${renta.url}`}>
                             <a>
                                 <img 
-                                    src={`/img/${renta.imagen}.jpg`}  
+                                    src={`/img/${renta.imagen}.webp`}  
                                     alt={`imagen de ${renta.nombre}`}
-                                    className="block h-auto w-auto object-cover object-center rounded-t-lg"
+                                    className="block h-56 w-full object-cover object-center rounded-t-lg"
                                 />
                             </a>
                         </Link>

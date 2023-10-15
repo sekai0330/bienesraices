@@ -55,9 +55,9 @@ export default function ListadoVentas({ ventas }) {
                         <Link legacyBehavior href={`/ventas/${venta.url}`}>
                             <a>
                                 <img 
-                                    src={`/img/${venta.imagen}.jpg`}  
+                                    src={`/img/${venta.imagen}.webp`}  
                                     alt={`imagen de ${venta.nombre}`}
-                                    className="block h-auto w-auto object-cover object-center rounded-t-lg"
+                                    className="block h-56 w-full object-cover object-center rounded-t-lg"
                                 />
                             </a>
                         </Link>

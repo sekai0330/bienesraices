@@ -19,7 +19,7 @@ export default function Carousel({ images }) {
                 {images.map((image, index) => (
                     <img
                         key={index}
-                        src={`/img/${image}.jpg`}
+                        src={`/img/${image}.webp`}
                         alt={`imagen ${index}`}
                         className={`w-full h-full rounded-3xl object-cover object-center transition-opacity duration-300 ${
                         index === currentImage ? '' : 'hidden'
